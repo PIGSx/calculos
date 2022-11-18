@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grape Nuts', cursive; 
+}
+body{
+    background-image: url(img/haha.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+
+.pai{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;  
+}
+
+.titulo{
+    border-style: double;
+    border: 3px solid rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    display: flex;
+    background-color: rgba(185, 57, 57, 0.863);
+    justify-content: center;
+    margin-top: 50px;
+    width: 500px;
+    
+}
+
+.titulo>h1{ 
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(185, 57, 57, 0.863);
+    justify-content: center;    
+}

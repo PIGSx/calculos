@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="app.js"></script>
+    <script src="link/jquery-3.6.0.min.js"></script>
+      
+<script>
+    function areaQuadrado(altura,largura){
+        area = largura * altura;
+       // alert("A área é:"+area+"u²");
+       document.querySelector('#Resultadoquadrado').innerHTML ="A área é:"+area+"u²";
+
+    }
+    function areaPiso(largura,comprimento){
+        area = largura * comprimento;
+        //alert("A área é:"+area+"u²");
+       document.querySelector('#Resultadopiso').innerHTML ="A área é:"+area+"u²";
+    }
+    function areaCubica(altura,largura, comprimento){
+        area = altura * largura * comprimento;
+        //alert("A área é:"+area+"u³");
+        document.querySelector('#Resultadocubico').innerHTML ="A área é:"+area+"u³";
+    }
+</script>
+
+
+</head>
+<body>
+    
+
+    <div class="pai">
+
+
+        <div class="titulo">
+            <h1>Calcule a área do Quadrado:</h1>
+            <form> 
+            <p>altura <input type="number" name="altura"></p>
+            <p>largura <input type="number" name="largura"></p>
+            <p><input type="button" value="calcular" onclick="areaQuadrado(altura.value,largura.value)" ></p>
+            <P id="Resultadoquadrado"></P>
+            </form>
+        </div>  
+
+        <div class="titulo">
+            <h1>Calcule a área do Piso:</h1>
+            <form> 
+                <p>largura <input type="number" name="largura"></p>
+                <p>comprimento <input type="number" name="comprimento"></p>
+                <p><input type="button" value="calcular" onclick="areaPiso(largura.value,comprimento.value)" ></p>
+                <P id="Resultadopiso"></P>
+             </form>
+            
+        </div>  
+
+        <div class="titulo">
+            <h1>Calcule a área Cúbica:</h1>
+            <form> 
+            <p>altura <input type="number" name="altura"></p>
+            <p>largura <input type="number" name="largura"></p>
+            <p>comprimento <input type="number" name="comprimento"></p>
+            <p><input type="button" value="calcular" onclick="areaCubica(altura.value,largura.value,comprimento.value)" ></p>
+            <P id="Resultadocubico"></P>
+            </form>
+
+        </div>  
+
+</div>
+
+</div> 
+
+
+</body>
+</html>
+
